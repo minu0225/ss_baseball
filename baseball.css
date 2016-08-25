@@ -21,6 +21,9 @@ body{
     background-color: #ffffff;
     float: left;
     border: 2px solid red;
+    font-size: 150px;
+    text-align: center;
+    line-height: 150px;
 }
 .com2{
      width: 110px;
@@ -29,6 +32,9 @@ body{
     float: left;
     margin-left: 50px;
     border: 2px solid red;
+    font-size: 150px;
+    text-align: center;
+    line-height: 150px;
 }
 .com3{
       width: 110px;
@@ -37,6 +43,9 @@ body{
     float: left;
     margin-left: 50px;
     border: 2px solid red;
+    font-size: 150px;
+    text-align: center;
+    line-height: 150px;
 }
 #result{
     width: 700px;
@@ -81,3 +90,26 @@ body{
     font-size: 150px;
     text-align: center;
 }
+#button{
+    width: 336px;
+    height: 130px;
+    margin: 0 auto;
+}
+.reset{
+    width: 150px;
+    height: 100px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+.reset:hover{
+    background-color: gray;
+}
+.start{
+    width: 150px;
+    height: 100px;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.start:hover{
+    background-color: gray;
