@@ -113,3 +113,19 @@ body{
 }
 .start:hover{
     background-color: gray;
+}
+#start_button{
+font-size: 100px;
+width: 700px;
+    height: 400px;
+    border-radius: 100px;
+    margin-left: 50px;
+}
+#start_button:hover{
+    background-color: gray;
+}
+#warp{
+    width: 800px;
+    height: 700px;
+    margin: 0 auto;
+}
