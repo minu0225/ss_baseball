@@ -25,13 +25,20 @@ $_SESSION['result'] = 0;
        <div class="com3">?</div>
           </div>
           <div id="result">
-             
+             <?php
+              $query = "SELECT * FROM baseball";
+                $result = mysql_query($query);
+               while($arr=mysql_fetch_array($result)){
+               echo "$arr";
+    }
+              echo "숫자를 입력해주세요.";
+              ?>
               </div>
               <form action="game_body.php" method="post">
           <div id="user">
-        <input type="text" name="user1" class="user1" placeholder="0" maxlength="1">
-        <input type="text" name="user2" class="user2" placeholder="0" maxlength="1">
-        <input type="text" name="user3" class="user3" placeholder="0" maxlength="1">
+        <input type="text" name="user1" class="user1" placeholder="0" maxlength="1" required>
+        <input type="text" name="user2" class="user2" placeholder="0" maxlength="1" required>
+        <input type="text" name="user3" class="user3" placeholder="0" maxlength="1" required>
         <div id="button">
          <input type="button" value="재시작" class="reset" onclick="game_reset()">
           <input type="submit" value="시작" class="start">
@@ -41,7 +48,7 @@ $_SESSION['result'] = 0;
           <script>
           function game_reset(){
             alert('게임을 재시작합니다.');
-            location.href('');
+            location.href('game_reset.php');
           }
           </script>
    </article>

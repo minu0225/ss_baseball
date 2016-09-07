@@ -52,5 +52,5 @@ if($c1!=$u1 && $c2!=$u2 && $c3!=$u3 && $c2==$u3){
 $result = "$strike 스트라이크, $ball 볼, $out 아웃";
     $sql="insert into baseball(result)";
     $sql="valuse('$result');";
-
+include "startpage.php";
 ?>
